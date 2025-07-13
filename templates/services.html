@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+
+{% block title %}Website Packages - Wedding Website Services{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section" style="min-height: 50vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">Wedding Website Packages</h1>
+                <p class="lead mb-4">Various wedding website packages with complete features and affordable pricing to create your dream wedding website</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Website Packages Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Basic Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card h-100">
+                    <div class="card-header text-center py-4" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                        <h4 class="mb-0">Basic Package</h4>
+                        <div class="service-price mt-2">$99 USD</div>
+                        <small class="text-muted">Digital Wedding Invitation</small>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Modern responsive design</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Main page with couple photos</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Complete event information</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Wedding countdown timer</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Wedding countdown timer</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Photo gallery (max 20 photos)</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Simple online RSVP</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>.com domain (1 year)</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Hosting (1 year)</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 revisions</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="{{ url_for('website_request') }}" class="btn btn-primary">Choose Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card h-100 border-primary">
+                    <div class="card-header text-center py-4" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                        <h4 class="mb-0">Premium Package</h4>
+                        <div class="service-price mt-2">$199 USD</div>
+                        <small>Complete Website + Gallery</small>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>All Basic Package features</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom design according to theme</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unlimited photo gallery</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Video gallery (max 5 videos)</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Complete RSVP form</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Love story page</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Family page</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Background music</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Scroll animations</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>3 revisions</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>6 months maintenance</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="{{ url_for('website_request') }}" class="btn btn-primary">Choose Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card h-100">
+                    <div class="card-header text-center py-4" style="background: linear-gradient(135deg, #2c3e50, #34495e); color: white;">
+                        <h4 class="mb-0">Luxury Package</h4>
+                        <div class="service-price mt-2">$299 USD</div>
+                        <small>Premium Website + Blog</small>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>All Premium Package features</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Wedding blog</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Wedding tips page</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unlimited video gallery</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>WhatsApp live chat</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SEO optimization</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Google Analytics</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Automatic backup</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unlimited revisions</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>1 year maintenance</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>24/7 support</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="{{ url_for('website_request') }}" class="btn btn-primary">Choose Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Website Features -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-3">Wedding Website Features</h2>
+                <p class="text-muted">Complete features that make your wedding website perfect</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid services-feature-img" alt="Digital Invitation">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Invitation</h5>
+                                <p class="card-text">Elegant digital invitation with complete wedding event information.</p>
+                                <div class="service-price">Included in all packages</div>
+                                <a href="{{ url_for('website_request') }}" class="btn btn-outline-primary btn-sm">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='images/photo-gallery.jpg') }}" class="img-fluid services-feature-img" alt="Photo Gallery">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Photo & Video Gallery</h5>
+                                <p class="card-text">Wedding photo and video gallery accessible by family and friends.</p>
+                                <div class="service-price">Premium & Luxury Packages</div>
+                                <a href="{{ url_for('website_request') }}" class="btn btn-outline-primary btn-sm">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='images/rsvp.jpg') }}" class="img-fluid services-feature-img" alt="Online RSVP">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Online RSVP</h5>
+                                <p class="card-text">Online RSVP system to easily manage guest count.</p>
+                                <div class="service-price">All packages</div>
+                                <a href="{{ url_for('website_request') }}" class="btn btn-outline-primary btn-sm">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid services-feature-img" alt="Wedding Blog">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding Blog</h5>
+                                <p class="card-text">Blog to share wedding stories and tips for young couples.</p>
+                                <div class="service-price">Luxury Package</div>
+                                <a href="{{ url_for('website_request') }}" class="btn btn-outline-primary btn-sm">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-3">Why Choose Our Wedding Websites?</h2>
+                <p class="text-muted">We are committed to providing the best wedding websites with complete features</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                    <h5>Responsive Design</h5>
+                    <p class="text-muted">Websites that display perfectly on all devices</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <i class="fas fa-palette fa-3x text-primary mb-3"></i>
+                    <h5>Custom Design</h5>
+                    <p class="text-muted">Design tailored to your wedding theme</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <i class="fas fa-rocket fa-3x text-primary mb-3"></i>
+                    <h5>Fast Loading</h5>
+                    <p class="text-muted">Fast and optimized websites for the best experience</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                    <h5>24/7 Support</h5>
+                    <p class="text-muted">Technical support ready to help you anytime</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-4">Ready to Create Your Wedding Website?</h2>
+                <p class="lead mb-4">Free consultation to choose the package that fits your needs and budget</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('website_request') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-globe me-2"></i>Order Website Now
+                    </a>
+                    <a href="https://wa.me/62085775236846?text=Hello! I want to consult about wedding website packages." target="_blank" class="btn btn-outline-light btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

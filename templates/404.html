@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Halaman Tidak Ditemukan - Wedding Agency Indonesia{% endblock %}
+
+{% block content %}
+<section class="section-padding" style="min-height: 60vh; display: flex; align-items: center;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-1 text-muted mb-4">404</h1>
+                <h2 class="mb-4">Halaman Tidak Ditemukan</h2>
+                <p class="lead mb-4">Maaf, halaman yang Anda cari tidak ditemukan. Silakan kembali ke beranda atau gunakan menu navigasi di atas.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-home me-2"></i>Kembali ke Beranda
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

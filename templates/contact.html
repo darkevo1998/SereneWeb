@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Wedding Website Services{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section" style="min-height: 50vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+                <p class="lead mb-4">Get in touch with us for consultation about your dream wedding website</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Contact Form -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-5">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="">Choose a subject</option>
+                                        <option value="Website Consultation">Website Consultation</option>
+                                        <option value="Package Information">Package Information</option>
+                                        <option value="Technical Support">Technical Support</option>
+                                        <option value="Partnership">Partnership</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Tell us about your wedding website needs..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h4 class="mb-4">Contact Information</h4>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6>Address</h6>
+                                <p class="mb-0">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-phone fa-2x text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6>Phone</h6>
+                                <p class="mb-0">+62 857-7523-6846</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-clock fa-2x text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6>Business Hours</h6>
+                                <p class="mb-0">Monday - Friday: 09:00 - 18:00<br>Saturday: 09:00 - 15:00<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+
+                        <!--
+                        <div class="text-center">
+                            <h6 class="mb-3">Follow Us</h6>
+                            <div class="social-links">
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team and Map sections removed -->
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-4">Ready to Start Your Wedding Website Project?</h2>
+                <p class="lead mb-4">Contact us now for a free consultation and get started on your dream wedding website</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('website_request') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-globe me-2"></i>Order Website Now
+                    </a>
+                    <a href="https://wa.me/62085775236846?text=Hello! I want to consult about wedding website." target="_blank" class="btn btn-outline-light btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

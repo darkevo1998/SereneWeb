@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio - Wedding Website Services{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section" style="min-height: 40vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">Wedding Website Portfolio</h1>
+                <p class="lead mb-4">Collection of the best wedding websites with various themes and features</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Filter -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <div class="btn-group" role="group" aria-label="Portfolio filter">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="invitation">Wedding Invitation</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="gallery">Photo Gallery</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="blog">Wedding Blog</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="custom">Custom Website</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4" id="gallery-grid">
+            <!-- Wedding Invitation Websites -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="invitation">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Sarah & Ahmad Wedding Invitation">
+                    <div class="card-body">
+                        <h6 class="card-title">Sarah & Ahmad</h6>
+                        <p class="card-text text-muted">Digital Wedding Invitation</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Online RSVP</span>
+                            <span class="badge bg-primary">Countdown</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="invitation">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Diana & Rizki Wedding Invitation">
+                    <div class="card-body">
+                        <h6 class="card-title">Diana & Rizki</h6>
+                        <p class="card-text text-muted">Premium Wedding Invitation</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Photo Gallery</span>
+                            <span class="badge bg-primary">Background Music</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="invitation">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Maya & Budi Wedding Invitation">
+                    <div class="card-body">
+                        <h6 class="card-title">Maya & Budi</h6>
+                        <p class="card-text text-muted">Luxury Wedding Invitation</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Wedding Blog</span>
+                            <span class="badge bg-primary">SEO Optimized</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Photo Gallery Websites -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="gallery">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1537907696089-75d5c5046780?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pre-wedding Photo Gallery">
+                    <div class="card-body">
+                        <h6 class="card-title">Pre-wedding Gallery</h6>
+                        <p class="card-text text-muted">Photo Gallery Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Lightbox</span>
+                            <span class="badge bg-primary">Slideshow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="gallery">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Wedding Video Gallery">
+                    <div class="card-body">
+                        <h6 class="card-title">Wedding Video Gallery</h6>
+                        <p class="card-text text-muted">Video Gallery Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Video Player</span>
+                            <span class="badge bg-primary">HD Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="gallery">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Wedding Photo Gallery">
+                    <div class="card-body">
+                        <h6 class="card-title">Wedding Gallery</h6>
+                        <p class="card-text text-muted">Complete Gallery Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Photos & Videos</span>
+                            <span class="badge bg-primary">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wedding Blog Websites -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="blog">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Wedding Blog">
+                    <div class="card-body">
+                        <h6 class="card-title">Wedding Blog</h6>
+                        <p class="card-text text-muted">Personal Blog Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">CMS</span>
+                            <span class="badge bg-primary">Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="blog">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Wedding Tips Blog">
+                    <div class="card-body">
+                        <h6 class="card-title">Wedding Tips</h6>
+                        <p class="card-text text-muted">Tips Blog Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">SEO</span>
+                            <span class="badge bg-primary">Social Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="blog">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Love Story Blog">
+                    <div class="card-body">
+                        <h6 class="card-title">Love Story</h6>
+                        <p class="card-text text-muted">Story Blog Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Timeline</span>
+                            <span class="badge bg-primary">Gallery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Websites -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="custom">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Custom Website">
+                    <div class="card-body">
+                        <h6 class="card-title">Custom Website</h6>
+                        <p class="card-text text-muted">Website with Special Features</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Custom</span>
+                            <span class="badge bg-primary">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="custom">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="E-commerce Wedding">
+                    <div class="card-body">
+                        <h6 class="card-title">E-commerce Wedding</h6>
+                        <p class="card-text text-muted">Online Store Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Payment</span>
+                            <span class="badge bg-primary">Inventory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="custom">
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Wedding Planner">
+                    <div class="card-body">
+                        <h6 class="card-title">Wedding Planner</h6>
+                        <p class="card-text text-muted">Wedding Planner Website</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-primary">Booking</span>
+                            <span class="badge bg-primary">Calendar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-3">Latest Websites</h2>
+                <p class="text-muted">Some of the latest wedding websites we've created</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Sarah & Ahmad">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Sarah & Ahmad</h5>
+                                <p class="text-muted">Jakarta, December 15, 2023</p>
+                                <p class="card-text">Digital wedding invitation with modern elegant theme. Features online RSVP and elegant photo gallery.</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge bg-primary">Premium Package</span>
+                                    <span class="badge bg-primary">Responsive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Diana & Rizki">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Diana & Rizki</h5>
+                                <p class="text-muted">Bandung, December 20, 2023</p>
+                                <p class="card-text">Photo and video gallery website with minimalist design. Features smooth lightbox and slideshow.</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge bg-primary">Luxury Package</span>
+                                    <span class="badge bg-primary">Fast Loading</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Maya & Budi">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Maya & Budi</h5>
+                                <p class="text-muted">Surabaya, December 25, 2023</p>
+                                <p class="card-text">Wedding blog website with CMS. Features SEO optimization and social media integration.</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge bg-primary">Custom Package</span>
+                                    <span class="badge bg-primary">SEO Ready</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1537907696089-75d5c5046780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Linda & Andi">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Linda & Andi</h5>
+                                <p class="text-muted">Yogyakarta, December 30, 2023</p>
+                                <p class="card-text">Wedding invitation with traditional theme. Features background music and attractive scroll animations.</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge bg-primary">Basic Package</span>
+                                    <span class="badge bg-primary">Animation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-4">Ready to Create Your Wedding Website?</h2>
+                <p class="lead mb-4">Our team is ready to help you create an elegant and modern wedding website</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('website_request') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-globe me-2"></i>Order Website Now
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Hello! I want to consult about wedding website." target="_blank" class="btn btn-outline-light btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Gallery filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Show/hide gallery items
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+{% endblock %} 

@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Wedding Website Services{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section" style="min-height: 50vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">About SereneWed</h1>
+                <p class="lead mb-4">We are specialists in creating elegant and modern wedding websites that preserve your special moments in unforgettable digital form</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Who We Are</h2>
+                <p class="lead mb-4">SereneWed is a wedding website creation company that has been trusted by hundreds of couples to create their dream wedding websites.</p>
+                <p class="mb-4">We understand that every couple has a unique love story and wedding vision. That's why we are committed to creating wedding websites that not only look beautiful but also reflect the personality and style of each couple.</p>
+                <p class="mb-4">With our experience and modern technology, we ensure that every wedding website we create is responsive, fast, and provides the best user experience for your guests.</p>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h4 class="text-primary mb-1">500+</h4>
+                            <small class="text-muted">Happy Couples</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center p-3 bg-light rounded">
+                            <h4 class="text-primary mb-1">3+</h4>
+                            <small class="text-muted">Years Experience</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded" alt="About Us">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-bullseye fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="text-center mb-3">Our Mission</h3>
+                        <p class="text-center">To help every couple create a beautiful and meaningful wedding website that can preserve their special moments and share their love story with family and friends in an elegant digital form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-eye fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="text-center mb-3">Our Vision</h3>
+                        <p class="text-center">To become the leading wedding website creation company in Indonesia, known for quality, innovation, and customer satisfaction in creating unforgettable digital wedding experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-3">Our Values</h2>
+                <p class="text-muted">The principles that guide us in serving our clients</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h5>Passion</h5>
+                    <p class="text-muted">We work with passion and dedication to create the best wedding websites for every couple</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h5>Innovation</h5>
+                    <p class="text-muted">We continuously innovate to provide the latest features and technology for wedding websites</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h5>Customer Focus</h5>
+                    <p class="text-muted">Customer satisfaction is our top priority in every project we work on</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5>Quality</h5>
+                    <p class="text-muted">We maintain high quality standards in every aspect of our work</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team section removed -->
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-4">Ready to Work With Us?</h2>
+                <p class="lead mb-4">Let's create your dream wedding website together</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('website_request') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-globe me-2"></i>Order Website Now
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

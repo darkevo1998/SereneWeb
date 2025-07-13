@@ -1,0 +1,335 @@
+{% extends "base.html" %}
+
+{% block title %}Order Website - Wedding Website Services{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section" style="min-height: 50vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">Order Your Wedding Website</h1>
+                <p class="lead mb-4">Fill out the form below to start creating your dream wedding website</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Order Form Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-5">
+                        <h3 class="text-center mb-4">Website Order Form</h3>
+                        <p class="text-center text-muted mb-4">Please fill out the form below with your wedding website requirements</p>
+                        
+                        <form method="POST">
+                            <div class="row g-3">
+                                <!-- Personal Information -->
+                                <div class="col-12">
+                                    <h5 class="mb-3 text-primary">Personal Information</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="wedding_date" class="form-label">Wedding Date *</label>
+                                    <input type="date" class="form-control" id="wedding_date" name="wedding_date" required>
+                                </div>
+
+                                <!-- Website Package -->
+                                <div class="col-12">
+                                    <h5 class="mb-3 text-primary">Website Package</h5>
+                                </div>
+                                <div class="col-12">
+                                    <label for="package" class="form-label">Choose Package *</label>
+                                    <select class="form-select" id="package" name="package" required>
+                                        <option value="">Select a package</option>
+                                                            <option value="Basic">Basic Package - $99 USD (Digital Wedding Invitation)</option>
+                    <option value="Premium">Premium Package - $199 USD (Complete Website + Gallery)</option>
+                    <option value="Luxury">Luxury Package - $299 USD (Premium Website + Blog)</option>
+                                    </select>
+                                </div>
+
+                                <!-- Website Type -->
+                                <div class="col-12">
+                                    <label for="website_type" class="form-label">Website Type *</label>
+                                    <select class="form-select" id="website_type" name="website_type" required>
+                                        <option value="">Select website type</option>
+                                        <option value="Wedding Invitation">Wedding Invitation Website</option>
+                                        <option value="Photo Gallery">Photo & Video Gallery Website</option>
+                                        <option value="Wedding Blog">Wedding Blog Website</option>
+                                        <option value="Custom">Custom Wedding Website</option>
+                                    </select>
+                                </div>
+
+                                <!-- Design Preferences -->
+                                <div class="col-12">
+                                    <h5 class="mb-3 text-primary">Design Preferences</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="theme_color" class="form-label">Theme Color</label>
+                                    <select class="form-select" id="theme_color" name="theme_color">
+                                        <option value="">Choose theme color</option>
+                                        <option value="Gold">Gold</option>
+                                        <option value="Pink">Pink</option>
+                                        <option value="Blue">Blue</option>
+                                        <option value="Purple">Purple</option>
+                                        <option value="Green">Green</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Custom">Custom Color</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="design_style" class="form-label">Design Style</label>
+                                    <select class="form-select" id="design_style" name="design_style">
+                                        <option value="">Choose design style</option>
+                                        <option value="Modern">Modern & Minimalist</option>
+                                        <option value="Classic">Classic & Elegant</option>
+                                        <option value="Romantic">Romantic & Soft</option>
+                                        <option value="Vintage">Vintage & Retro</option>
+                                        <option value="Luxury">Luxury & Premium</option>
+                                    </select>
+                                </div>
+
+                                <!-- Budget -->
+                                <div class="col-12">
+                                    <label for="budget" class="form-label">Budget Range</label>
+                                    <select class="form-select" id="budget" name="budget">
+                                        <option value="">Select budget range</option>
+                                                            <option value="1-2M">$100 - $200 USD</option>
+                    <option value="2-3M">$200 - $300 USD</option>
+                    <option value="3-5M">$300 - $500 USD</option>
+                    <option value="5M+">Above $500 USD</option>
+                                    </select>
+                                </div>
+
+                                <!-- Additional Features -->
+                                <div class="col-12">
+                                    <label class="form-label">Additional Features (Optional)</label>
+                                    <div class="row g-2">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="rsvp" name="features" value="rsvp">
+                                                <label class="form-check-label" for="rsvp">Online RSVP System</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gallery" name="features" value="gallery">
+                                                <label class="form-check-label" for="gallery">Photo & Video Gallery</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="countdown" name="features" value="countdown">
+                                                <label class="form-check-label" for="countdown">Wedding Countdown Timer</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="music" name="features" value="music">
+                                                <label class="form-check-label" for="music">Background Music</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="countdown" name="features" value="countdown">
+<label class="form-check-label" for="countdown">Wedding Countdown Timer</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="blog" name="features" value="blog">
+                                                <label class="form-check-label" for="blog">Wedding Blog</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Message -->
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Additional Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about your specific requirements, wedding theme, or any special requests..."></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>Submit Order
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-3">Our Website Creation Process</h2>
+                <p class="text-muted">How we work to create your perfect wedding website</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h5>1. Consultation</h5>
+                    <p class="text-muted">We discuss your requirements, wedding theme, and preferences to understand your vision</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h5>2. Design</h5>
+                    <p class="text-muted">Our designers create a beautiful and elegant design that matches your wedding theme</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h5>3. Development</h5>
+                    <p class="text-muted">Our developers build your website with all the features and functionality you requested</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h5>4. Launch</h5>
+                    <p class="text-muted">Your website is launched and ready to share with family and friends</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-3">Frequently Asked Questions</h2>
+                <p class="text-muted">Common questions about our wedding website services</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                How long does it take to create a wedding website?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The timeline depends on the package you choose. Basic packages take 3-5 days, Premium packages take 5-7 days, and Luxury packages take 7-10 days. We'll provide you with a detailed timeline during consultation.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                Can I customize the design according to my wedding theme?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes! We offer custom design services where we can match your website design to your wedding theme, colors, and style preferences. This is included in Premium and Luxury packages.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                Do you provide hosting and domain services?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, all our packages include domain (.com) and hosting for 1 year. We handle all the technical setup so you don't have to worry about anything.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                Can I update the website content myself?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                For Premium and Luxury packages, we provide a simple admin panel where you can update photos, text, and other content easily. We also offer training on how to use it.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                What if I'm not satisfied with the result?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We offer unlimited revisions for Luxury packages and 3 revisions for Premium packages. We work closely with you to ensure you're completely satisfied with the final result.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-4">Ready to Create Your Dream Wedding Website?</h2>
+                <p class="lead mb-4">Start your journey to a beautiful wedding website today</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="https://wa.me/62085775236846?text=Hello! I want to order a wedding website." target="_blank" class="btn btn-light btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp Consultation
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
