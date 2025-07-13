@@ -1,22 +1,65 @@
 {% extends "base.html" %}
 
-{% block title %}Halaman Tidak Ditemukan - Wedding Agency Indonesia{% endblock %}
+{% block title %}Page Not Found - SereneWed{% endblock %}
 
 {% block content %}
-<section class="section-padding" style="min-height: 60vh; display: flex; align-items: center;">
+<section class="hero-section" style="min-height: 60vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-1 fw-bold mb-4">404</h1>
+                <h2 class="display-6 mb-4">Page Not Found</h2>
+                <p class="lead mb-4">Oops! The page you're looking for doesn't exist. It might have been moved or deleted.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-home me-2"></i>Go Home
+                    </a>
+                    <a href="{{ url_for('services') }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-eye me-2"></i>View Packages
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-8 mx-auto">
-                <h1 class="display-1 text-muted mb-4">404</h1>
-                <h2 class="mb-4">Halaman Tidak Ditemukan</h2>
-                <p class="lead mb-4">Maaf, halaman yang Anda cari tidak ditemukan. Silakan kembali ke beranda atau gunakan menu navigasi di atas.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">
-                        <i class="fas fa-home me-2"></i>Kembali ke Beranda
-                    </a>
-                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary btn-lg">
-                        <i class="fas fa-envelope me-2"></i>Hubungi Kami
-                    </a>
+                <h3 class="mb-4">Looking for Wedding Website Services?</h3>
+                <p class="lead mb-4">We can help you create a beautiful wedding website. Check out our packages or contact us for a consultation.</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+                                <h5>Wedding Invitations</h5>
+                                <p>Elegant digital wedding invitations</p>
+                                <a href="{{ url_for('services') }}" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-images fa-3x text-primary mb-3"></i>
+                                <h5>Photo Galleries</h5>
+                                <p>Beautiful photo and video galleries</p>
+                                <a href="{{ url_for('services') }}" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-blog fa-3x text-primary mb-3"></i>
+                                <h5>Wedding Blogs</h5>
+                                <p>Share your love story online</p>
+                                <a href="{{ url_for('services') }}" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

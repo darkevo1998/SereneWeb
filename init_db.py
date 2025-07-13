@@ -1,28 +1,11 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
-from flask_sqlalchemy import SQLAlchemy
+from app import app, db
+from models import WebsiteService, WebsitePortfolio
 from datetime import datetime
-import os
-
-# Initialize Flask app untuk SereneWed
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'serenewed_secret_key_2024'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///serenewed.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-# Initialize SQLAlchemy untuk database SereneWed
-db = SQLAlchemy(app)
-
-# Import routes setelah inisialisasi db
-from routes import *
 
 def init_database():
-    """Initialize database with sample data"""
     with app.app_context():
         # Create all tables
         db.create_all()
-        
-        # Import models after db is created
-        from models import WebsiteService, WebsitePortfolio
         
         # Check if data already exists
         if WebsiteService.query.first() is None:
@@ -112,10 +95,8 @@ def init_database():
             # Commit all changes
             db.session.commit()
             print("Database initialized with sample data!")
+        else:
+            print("Database already has data!")
 
-if __name__ == '__main__':
-    # Initialize database with sample data
-    init_database()
-    # Jalankan website SereneWed
-    port = int(os.environ.get('PORT', 5000))
-    app.run(debug=False, host='0.0.0.0', port=port) 
+if __name__ == "__main__":
+    init_database() 

@@ -1,22 +1,55 @@
 {% extends "base.html" %}
 
-{% block title %}Kesalahan Server - Wedding Agency Indonesia{% endblock %}
+{% block title %}Server Error - SereneWed{% endblock %}
 
 {% block content %}
-<section class="section-padding" style="min-height: 60vh; display: flex; align-items: center;">
+<section class="hero-section" style="min-height: 60vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-1 fw-bold mb-4">500</h1>
+                <h2 class="display-6 mb-4">Server Error</h2>
+                <p class="lead mb-4">Oops! Something went wrong on our end. We're working to fix this issue. Please try again later.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-home me-2"></i>Go Home
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-8 mx-auto">
-                <h1 class="display-1 text-muted mb-4">500</h1>
-                <h2 class="mb-4">Kesalahan Server</h2>
-                <p class="lead mb-4">Maaf, terjadi kesalahan pada server kami. Tim kami sedang memperbaiki masalah ini. Silakan coba lagi dalam beberapa saat.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">
-                        <i class="fas fa-home me-2"></i>Kembali ke Beranda
-                    </a>
-                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary btn-lg">
-                        <i class="fas fa-envelope me-2"></i>Hubungi Kami
-                    </a>
+                <h3 class="mb-4">Need Help?</h3>
+                <p class="lead mb-4">If you're experiencing persistent issues, please contact us directly. We're here to help!</p>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fab fa-whatsapp fa-3x text-success mb-3"></i>
+                                <h5>WhatsApp Support</h5>
+                                <p>Get instant help via WhatsApp</p>
+                                <a href="https://wa.me/62085775236846" target="_blank" class="btn btn-outline-success">Chat Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                                <h5>Phone Support</h5>
+                                <p>Call us for immediate assistance</p>
+                                <a href="tel:+6285775236846" class="btn btn-outline-primary">Call Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
